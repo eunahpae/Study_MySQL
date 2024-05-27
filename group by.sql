@@ -15,6 +15,7 @@ GROUP BY category_code;
 
 
 -- sum()
+
 SELECT 
     category_code, SUM(menu_price)
 FROM
