@@ -1,5 +1,4 @@
--- Q. 2024-06-03 에 출발하는 예약건의 모든 손님 이름과 전화번호를 구하고 손님의 이름 기준으로 오름차순 정렬하는 쿼리						
--- 모든 날짜에 비행을 예약한 남자 손님의 이름, 전화번호, 성별, 출발공항, 도착공항, 출발일시, 항공사이름을 구하라. 
+-- Q. 모든 날짜에 비행을 예약한 남자 손님의 이름, 전화번호, 성별, 출발공항, 도착공항, 출발일시, 항공사이름을 구하라. 
 -- 컬럼은 각각 NAME,PHONE, GENDER 로 설정하고 이후는 컬럼명대로 출력되게 하라. 출발일시 기준 오름차순 정렬
 SELECT 
     p.passenger_name AS NAME,
@@ -17,6 +16,8 @@ FROM
     reservation r ON f.schedule_code = r.schedule_code
         JOIN
     passenger p ON p.passenger_code = r.passenger_code
+WHERE
+    gender = '남'
 ORDER BY f.departure_airport ASC;
     
 -- Q. 2024-06-03 에 출발하는 예약건의 모든 손님 이름과 전화번호를 구하고 손님의 이름 기준으로 오름차순 정렬하는 쿼리

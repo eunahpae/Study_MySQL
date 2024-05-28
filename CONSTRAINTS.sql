@@ -14,7 +14,7 @@
 use menudb;
 DROP TABLE IF EXISTS user_notnull;
 CREATE TABLE IF NOT EXISTS user_notnull (
-    user_no INT NOT NULL,
+    user_no INT NOT NULL AUTO_INCREMENT,
     user_id VARCHAR(255) NOT NULL,
     user_pwd VARCHAR(255) NOT NULL,
     user_name VARCHAR(255) NOT NULL,
