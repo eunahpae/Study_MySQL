@@ -1,7 +1,7 @@
 -- DML (Data Manipulation Language)  데이터 조작 언어
 
 -- 테이블에 값을 삽입하거나 수정하거나 삭제하는 언어
--- insert,update,delete,selete
+-- insert,update,delete,select
 
 -- insert
 -- 새로운 행을 추가하는 구문이다. 테이블의 행의 수가 증가한다.
