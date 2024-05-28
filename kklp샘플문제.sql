@@ -42,4 +42,4 @@ FROM
         JOIN
     airplane a ON f.airplane_code = a.airplane_code
 WHERE
-    a.model LIKE 'b%';
+    a.model LIKE 'Boeing%';
